@@ -15,9 +15,9 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 @Entity
 @Table(name="student")
 public class Student implements Serializable {

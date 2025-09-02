@@ -13,10 +13,6 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/students")
 public class StudentsController {
-    @RequestMapping(value = "", method = RequestMethod.GET)
-    public ResponseEntity<?> hello(){
-        return new ResponseEntity<>("Hello World!", HttpStatus.OK);
-    }
 
     @Autowired
     StudentService studentService;
